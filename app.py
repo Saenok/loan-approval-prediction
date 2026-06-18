@@ -41,7 +41,6 @@ if st.button("Predict"):
     prediction = model.predict(data)
 
     if prediction[0] == 0:
-    st.success("Loan Approved")
-else:
-    st.error("Loan Rejected")
-    
+        st.success("Loan Approved")
+    else:
+        st.error("Loan Rejected")
